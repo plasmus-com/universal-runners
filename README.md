@@ -1,10 +1,10 @@
-# GitHub Actions Self Hosted Runner (Autoscaling with Kubernetes
+# GitHub Actions Self Hosted Runner (Autoscaling with Kubernetes)
 
 * [Create K8S cluster with Ansible](#create-k8s-cluster-with-ansible)
 * [Install cert-manager on K8S](#install-cert-manager-on-k8s)
 * [Install actions-runner-controller](#install-actions-runner-controller)
 
-# Create K8S cluster with Ansible
+## Create K8S cluster with Ansible
 
 Go over each file under ``kube-cluster`` directory and create K8S cluster with [Ansible](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-20-04).
 
@@ -36,7 +36,7 @@ ansible-playbook workers.yml
 ```bash
 kubectl get svc
 ```
-# Install Cert-Manager K8S
+## Install Cert-Manager on K8S
 
 - Add Helm repo
 ```bash
